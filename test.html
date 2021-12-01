@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+.cont {
+  width: 80%;
+  height: 40%;
+  margin: 50px auto 0;
+  background-color: #f4f4f4;
+}
+.left-item{
+  width: 10em;
+  height: 100%;
+  background-color: #0099ff;
+}
+.right-item{
+  height: 100%;
+  background-color: #ff6666;
+}
+.cont {
+  zoom: 1;
+}
+.cont::after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.left-item {
+  float: left;
+}
+.right-item {
+  width: 100%;
+  padding-left: 10em;
+  box-sizing: border-box;
+}
+
+
+</style>
+</head>
+<body>
+  <div class="cont">
+    <div class="left-item">
+    </div>
+    <div class="right-item">
+    </div>
+  </div>
+</body>
+</html>
